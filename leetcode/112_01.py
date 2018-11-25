@@ -1,6 +1,5 @@
 
 
-# @hetang
 # T https://leetcode-cn.com/contest/weekly-contest-112/problems/minimum-increment-to-make-array-unique/
 class Solution(object):
     """
@@ -10,6 +9,8 @@ class Solution(object):
         A[6] < res[6]
 
     """
+
+    # @hetang
     def minIncrementForUnique(self, A):         # A: 1 3 5 7 7 3 9
                                                 # res: 1 3 4 5 7 8 9  ,  inc 2
         if len(A) == 0:
@@ -26,3 +27,17 @@ class Solution(object):
                 inc += (bound - a)
                 bound += 1
         return inc
+
+    # @u2takey2
+    # def minIncrementForUnique(self, A):
+    #     """
+    #     :type A: List[int]
+    #     :rtype: int
+    #     """
+    #     A = sorted(A)
+    #     m, ret = -1, 0
+    #     for a in A:
+    #         ret += max(0, m + 1 - a)
+    #         m = max(a, m + 1)
+    #     return ret
+    #
