@@ -16,6 +16,28 @@ class Solution:
                 i += 1
         return len(s) == 0
 
+    # @Percy
+    # def validateStackSequences(self, pushed, popped):
+    #     """
+    #     :type pushed: List[int]
+    #     :type popped: List[int]
+    #     :rtype: bool
+    #     """
+    #     l = []
+    #     x = 0
+    #     for e in pushed:
+    #         if e == popped[x]:
+    #             x += 1
+    #             while len(l) > 0 and l[-1] == popped[x]:
+    #                 l.pop()
+    #                 x += 1
+    #         else:
+    #             l.append(e)
+    #     if len(l) == 0:
+    #         return True
+    #     else:
+    #         return False
+
     # @fishballLin
     # def validateStackSequences(self, pushed, popped):
     #     """
