@@ -20,3 +20,6 @@ def total(a=5, *args, **kwargs):
 
 print(total(100, 1, 2, 3, Jack=1234, aa=4321))
 print(total.__doc__)
+
+a = [1, 2, 3, 4]
+del a[0]
