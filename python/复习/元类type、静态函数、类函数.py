@@ -13,10 +13,18 @@ def func(self):
 """
 
 
+# 添加静态方法
 @staticmethod
 def test_func():
 
     print("this is a staticmethod func test")
+
+
+# 添加类方法
+@classmethod
+def test_func_plus(cls):
+
+    print(cls.test)
 
 
 t = type("t", (), {})
@@ -30,9 +38,16 @@ print(t2())
 
 MoneyPlusType = type("MoneyPlusType", (MoneyPlus,), {"test": "this is type class test",
                                                      "func": func,
-                                                     "test_func": test_func
+                                                     "test_func": test_func,
+                                                     "test_func_plus": test_func_plus,
                                                      })
 M = MoneyPlusType()
 print(M.func())
+print("*"*10)
+print(M.test_func())
+print("*"*10)
+print(M.test_func_plus())
+print("*"*10)
 
-
+print(M.__class__)  # <class '__main__.MoneyPlusType'> 类，实例化对象
+print(MoneyPlusType.__class__)  # <class 'type'> 元类type,创建类的类
