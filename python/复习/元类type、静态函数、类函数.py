@@ -1,6 +1,8 @@
+import types
 from python.复习.属性 import MoneyPlus
 
 
+# 实例方法
 def func(self):
     print("just func test")
     print(self.test)
@@ -51,3 +53,19 @@ print("*"*10)
 
 print(M.__class__)  # <class '__main__.MoneyPlusType'> 类，实例化对象
 print(MoneyPlusType.__class__)  # <class 'type'> 元类type,创建类的类
+
+M_P = MoneyPlus()
+
+# 增加实例方法
+M_P.test = types.MethodType(func, M_P)
+
+MoneyPlus.test = "测试"
+# 增加静态方法
+MoneyPlus.test_func = test_func
+
+# 增加类方法
+MoneyPlus.test_func_plus = test_func_plus
+
+print(M_P.test())
+MoneyPlus.test_func()
+MoneyPlus.test_func_plus()
