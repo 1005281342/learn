@@ -1,4 +1,6 @@
 """
+廖雪峰的官方网站
+https://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000/001432090171191d05dae6e129940518d1d6cf6eeaaa969000
 和多线程比，协程有何优势？
 
     最大的优势就是协程极高的执行效率。因为子程序切换不是线程切换，而是由程序自身控制，
@@ -92,9 +94,31 @@ if __name__ == '__main__':
 #         receive = coroutine.send(send)  # 让步给协程
 #         print('main receive', receive)
 
+    # 消费者
+    def consumer():
+        r = ''
+        while True:
+            n = yield r
+            if not n:
+                return
+            print('[CONSUMER] Consuming %s...' % n)
+            r = '200 OK'
+
+    # 生产者
+    def produce(c):     # 接受一个生成器对象
+        c.send(None)
+        n = 0
+        while n < 5:
+            n = n + 1
+            print('[PRODUCER] Producing %s...' % n)
+            r = c.send(n)
+            print('[PRODUCER] Consumer return: %s' % r)
+        c.close()
+
+    c = consumer()  # 实例化消费者生成器对象
+    produce(c)
 
 """
     如何知道是谁产出 "6" 结束程序
         -- 看 send 6
-
 """
