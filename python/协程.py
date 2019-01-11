@@ -59,6 +59,8 @@ if __name__ == '__main__':
     coroutine = simple_coroutine()
     print('main declare', coroutine)
     print("*", getgeneratorstate(coroutine))
+    # 需要提醒的是，第一次调用时，请使用next()语句
+    # 或是send(None)，不能使用send发送一个非None的值，否则会出错的，因为没有yield语句来接收这个值。
     receive = next(coroutine)
     print('main next', receive)
     while receive != 6:
@@ -74,6 +76,10 @@ if __name__ == '__main__':
         print("****", getgeneratorstate(coroutine))
         print('main receive', receive)
 
+    """
+        如何知道是谁先产出 "6" 结束程序
+            -- 看 send 6
+    """
 
 # if __name__ == '__main__':
 #     print('main started')
@@ -117,8 +123,3 @@ if __name__ == '__main__':
 
     c = consumer()  # 实例化消费者生成器对象
     produce(c)
-
-"""
-    如何知道是谁产出 "6" 结束程序
-        -- 看 send 6
-"""
