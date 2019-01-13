@@ -3,7 +3,7 @@ import cv2
 
 class Catch(object):
 
-    def __init__(self, device_id=1):
+    def __init__(self, device_id=0):
 
         self.device_id = device_id
         self.capture = cv2.VideoCapture(self.device_id)  # 打开摄像头
@@ -33,7 +33,6 @@ if __name__ == '__main__':
         cv2.imshow('frame', X)
         if cv2.waitKey(1) == ord('q'):  # 设置按Q退出
             break
-
 
 
 # # 打开摄像头并灰度化显示
