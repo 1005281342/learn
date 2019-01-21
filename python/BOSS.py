@@ -56,7 +56,7 @@ if __name__ == '__main__':
         a = ['Python', 'Python实习', 'python应届生']
         neiRong = liuLanQi.find_element_by_xpath('//*[@id="filter-box"]/div/div[1]/div/form/div[1]/p/input')
 
-        neiRong.send_keys(a[random.randint(0, 3)])
+        neiRong.send_keys(a[random.randint(0, 2)])
         # 提交
         print('提交')
         liuLanQi.find_element_by_xpath('//*[@id="filter-box"]/div/div[1]/div/form/button').click()
