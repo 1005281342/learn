@@ -1,5 +1,4 @@
 def total(a=5, *args, **kwargs):
-
     """
 
     :param a:
@@ -11,7 +10,6 @@ def total(a=5, *args, **kwargs):
     print(a)
 
     for x in args:
-
         print(x)
 
     for c, d in kwargs.items():
