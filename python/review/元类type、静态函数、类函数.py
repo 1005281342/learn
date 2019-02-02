@@ -1,5 +1,5 @@
 import types
-from python.复习.属性 import MoneyPlus
+from python.review.属性 import MoneyPlus
 
 
 # 实例方法
