@@ -63,7 +63,7 @@ if __name__ == '__main__':
 
         i = 1
 
-        while i < 999:
+        while i < 666:
             sleep(5)
             if (i > 30) and (i % 30) == 0:
                 print('已经连续搜索30次了，休息2S')
