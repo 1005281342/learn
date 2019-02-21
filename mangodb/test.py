@@ -9,10 +9,21 @@ from pymongo import MongoClient
 conn = MongoClient(host='127.0.0.1', port=27017)
 test_db = conn['test']
 test_table = test_db['test_table']
+# test_table = test_db['test_table_city']
 
-# 增， 改
+
+# res = test_table.find_one({"_id": "123"})
+# print(res)
+# if res:
+#     print("---")
+# else:
+# data = {
+#     "_id": "123"
+# }
+# test_table.save(data)
+# # 增， 改
 data = {
-    "_id": "02_2019-01-29",
+    "_id": "02_2019-02-29",
     "date_string": '2019-01-29',
     "spl_id": '01',
     "roomtype_count": '1022',
@@ -21,7 +32,7 @@ data = {
 }
 
 test_table.save(data)
-
-# 差
-aa = test_table.find_one({"_id": '02_2019-01-29'})
-print(type(aa))
+#
+# # 差
+# aa = test_table.find_one({"_id": '02_2019-01-29'})
+# print(type(aa))
