@@ -1,18 +1,62 @@
-### 推荐
+### 个人信息
+---
+- 姓名：欧阳举相
+- 手机：17673502448
+- 邮箱：oyjx0525@dingtalk.com
+- 求职意向：数据研发工程师
 
-[PEP8编程风格](https://github.com/amontalenti/elements-of-python-style/tree/master/zh-cn#Python写作指南)
-    
+### 教育背景
+---
+- 湘南学院 2015.9-至今
+- 软件与通信工程学院 通信工程专业
 
-[云栖社区 张玉宏 深度学习之美](https://yq.aliyun.com/articles/93540?spm=a2c4e.11153940.blogcont86580.14.69ca1979QJUvns)
+### 实习经历
+---
+- **深圳市途灵国际旅行社有限公司** *2018.4-至今/ Python工程师*
 
-    
-[Python协程](https://blog.csdn.net/weixin_43430036/article/details/85238174)
+### 项目经验
 
+***
+
+`我隶属于公司的技术开发组，开发基本以数据处理为主，以下是部分项目的描述`
+
+- Koasys供应商对接(koasys)
+
+  > 1. 该项目主要功能是同步Koasys集团酒店业务数据，开发周期约1个月;
+  > 2. 使用Golang开发拉取报价、二次验价、订单创建、订单查询、订单取消接口;
+  > 3. 供应商静态数据同步工具开发以及入库，本地测试，集成测试。
+
+
+- 大数据思维系统(hdata_mindr)
+
+  > 1. 该系统主要负责公司业务数据处理，结合机器学习思想通过特征工程、VSM构建，使用Keras、Sklearn结合业务实现算法，
+    产生酒店匹配、床型分类、房型匹配、城市匹配、报价预测等模型，并为数据可视化的工具(Echarts)提供数据支持，
+    用以监控各业务完成情况，便于运营以及算法调整与模型训练;
+  > 2. 该系统后端由我负责，选用Sainc作为Web框架，使用Gunicorn代理，采用Docker部署服务，
+    使用Redis做定时缓存，数据量大且更新时间不确定的部分场景则选用MongoDB。
+
+- 职业罗盘
+  > 1. 该项目为大学生互联网+创新创业项目，主要目的是开发一款基于大数据的就业推荐系统;
+  > 2. 使用Pandas处理数据以及统计分析，使用Sklearn实现基于协同过滤的推荐算法，
+    提供微信小程序、使用Ionic3混合开发的移动端。
     
-[Think Python 2e 中文译本](http://codingpy.com/books/thinkpython2/02-variables-expressions-and-statements.html)
-    
-    
-[一行代码创建资源服务器](https://blog.csdn.net/qq_41251963/article/details/84197298)
-    
-    python3 -m http.server 8888
-    默认端口是 8000，指定到8888
+- 基于电商评论的数据分析系统
+  > 1. 该项目为湖南省第十三届大学生程序设计竞赛应用开发类作品，荣获二等奖;
+  > 2. 数据采集: 使用Python做主体语言编写、利用Selenium模拟用户行为、使用BS4和XPath定位与解析数据;
+  > 3. 数据分析: 使用Jieba对文本分析、利用SnowNLP计算情感系数、采用Sklearn提供的SVM算法对商品作出"客观评价"，
+    采用Python+Pymongo对分析结果进行持久化存储，便于数据可视化;
+  > 4. 数据可视化: 使用Jinja2语法和BootStrap UI框架搭建前端页面。
+
+### 技术栈
+
+***
+
+- 前端技术
+  - 了解并能使用html， css，原生javascript，以及ES6;
+  - 使用jinja2语法，结合相关UI框架(如BootStrap，ElementUI)快速搭建出前端页面。
+
+- 后端技术
+  - Python基础知识扎实，熟悉常用的Python数据结构、多线程和协程;
+  - 数据处理上经常使用Numpy、Pandas、Keras、Sklearn;
+  - 了解MySQL数据库多表联查及优化，有Redis、MongoDB、HDF5等非关系型数据库使用经验;
+  - 熟悉Git和Linux命令。
