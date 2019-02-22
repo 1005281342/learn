@@ -7,6 +7,26 @@ def test(iterable_range):
         sleep(1)
 
 
+def write_text(iterable_range):
+    with open('a_test.txt', 'w') as f:
+        for i in iterable_range:
+            f.write(str(i))
+
+
+def create_text(iterable_range):
+    for i in iterable_range:
+        with open('test_' + str(i) + '.txt', 'w') as _:
+            # f.write('')
+            pass
+
+
+# create_text(range(1, 10))
+# test([range(1, 10)]*2)
+
 # 使用并行
 with concurrent.futures.ProcessPoolExecutor() as ex:
-    ex.map(test, range(1, 10))
+    res = ex.map(test, [range(1, 10)]*2)
+
+    # 但是在 python3中，返回是一个迭代器，所以它其实是不可调用的 <class 'generator'>
+    print(type(res))
+    res.__next__()
