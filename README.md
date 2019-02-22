@@ -3,7 +3,7 @@
 - 姓名：欧阳举相
 - 手机：17673502448
 - 邮箱：oyjx0525@dingtalk.com
-- 求职意向：数据研发工程师
+- 求职意向：Python
 
 ### 教育背景
 ---
@@ -61,4 +61,4 @@
   - Python基础知识扎实，熟悉常用的Python数据结构、多线程和协程;
   - 数据处理上经常使用Numpy、Pandas、Keras、Sklearn;
   - 了解MySQL数据库多表联查及优化，有Redis、MongoDB、HDF5等非关系型数据库使用经验;
-  - 熟悉Git和Linux命令。
+  - 了解Git和Linux命令。
