@@ -2,5 +2,7 @@
 
 [平安科技春招](http://campus.pingan.com/tech/position)
 
+[招商银行](https://cmbnt.cmbchina.com/zhaopinmobile/Resume/PreView.aspx)
+
 [格力电器招聘 2月22日完成基本测试](http://gree.zhiye.com/Portal/Apply/Index) 
 
