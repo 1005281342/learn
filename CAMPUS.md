@@ -9,3 +9,5 @@
 [37互娱 3月7日线上笔试](http://zhaopin.37.com/index.php?m=Home&c=campus&a=index)
 
 [网易游戏](https://campus.163.com/app/personal/msgDetail?msgId=329533)
+
+[疯狂游戏 3月2日上午线上笔试]()
