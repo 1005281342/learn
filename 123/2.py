@@ -29,6 +29,8 @@ m = {
     'z': 'A',
 }
 
+print(set(m.keys()))
+
 for line in sys.stdin:
     # a = line.split()
     # print(line)

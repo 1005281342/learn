@@ -1,5 +1,6 @@
 import sys
 
+
 def FizzBuzz(num):
     for i in range(1, int(num) + 1):
         if i % 5 == 0 and i % 3 == 0:
@@ -10,6 +11,7 @@ def FizzBuzz(num):
             print("Buzz")
         else:
             print(str(i))
+
 
 for line in sys.stdin:
     a = line.split()

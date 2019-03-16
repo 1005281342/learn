@@ -36,6 +36,6 @@ test_table.save(data)
 res_data = test_table.find_one("02_2019-02-29")
 print(res_data)
 #
-# # 差
-# aa = test_table.find_one({"_id": '02_2019-01-29'})
-# print(type(aa))
+# # 查
+aa = test_table.find_one({"_id": '022_2019-02-29'})
+print(aa)
