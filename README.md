@@ -16,10 +16,11 @@
 ---
   - Python基础知识扎实，熟悉常用的Python数据结构、多线程和协程;
   - 数据处理上经常使用Numpy、Pandas、Keras、Sklearn;
+  - 接口服务使用Gunicorn+Sanic/Flask
   - 了解MySQL数据库多表联查及优化，有Redis、MongoDB、HDF5等非关系型数据库使用经验;
   - 了解Git和Linux操作系统。
   - 了解并能使用html，css，javascript。
-  - 使用jinja2，结合相关UI框架(如BootStrap，ElementUI)快速搭建出前端页面。
+
 
 ### 个人评价
 ---
