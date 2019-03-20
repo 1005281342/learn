@@ -2,6 +2,7 @@
 ---
 - 姓名：欧阳举相
 - 手机：17673502448
+- 微信：ACMoyjx
 - 邮箱：oyjx0525@dingtalk.com
 - 求职意向：Python 数据处理
 
