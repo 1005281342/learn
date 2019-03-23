@@ -4,7 +4,7 @@
 - 手机：17673502448
 - 微信：ACMoyjx
 - 邮箱：oyjx0525@dingtalk.com
-- 求职意向：Python 
+- 求职意向：Python 后端开发
 
 ### 教育背景
 ---
