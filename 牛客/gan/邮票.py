@@ -1,4 +1,6 @@
 x = [8]*5 + [10]*4 + [18*6]
 
 s = set()
-pass
+
+for i in x:
+    pass
