@@ -30,22 +30,58 @@
 
 from itertools import product
 
+
 class Solution:
     def letterCombinations(self, digits: str) -> list:
 
-        d = {
-            '2': 'abc',
-            '3': 'def',
-            '4': 'ghi',
-            '5': 'jkl',
-            '6': 'mno',
-            '7': 'pqrs',
-            '8': 'tuv',
-            '9': 'wxyz'
-        }
-        res = ['']*len(digits)*4
+        # 创建字母对应的字符列表的字典
+        dic = {2: ['a', 'b', 'c'],
+               3: ['d', 'e', 'f'],
+               4: ['g', 'h', 'i'],
+               5: ['j', 'k', 'l'],
+               6: ['m', 'n', 'o'],
+               7: ['p', 'q', 'r', 's'],
+               8: ['t', 'u', 'v'],
+               9: ['w', 'x', 'y', 'z'],
+               }
+        # 存储结果的数组
+        ret_str = []
+        if len(digits) == 0:
+            return []
+        # 递归出口，当递归到最后一个数的时候result拿到结果进行for循环遍历
+        if len(digits) == 1:
+            return dic[int(digits[0])]
+        # 递归调用, 每次移动一位
+        result = self.letterCombinations(digits[1:])
+        # result是一个数组列表，遍历后字符串操作，加入列表
+        for r in result:
+            for j in dic[int(digits[0])]:
+                ret_str.append(j + r)
+        return ret_str
 
-        for i, digit in enumerate(digits):
-            for j, char in enumerate(d[digit]):
-                pass
+        # if len(digits) == 1:
+        #     return list(d[digits])
+        #
+        # x = ['']
+        # for char in digits:
+        #     if char in {'7', '9'}:
+        #         x *= 4
+        #     else:
+        #         x *= 3
+        # # print(x)
+        # # l_x = len(x)
+        # for v in digits:
+        #     l_v = len(d[v])
+        #     # print(l_v)
+        #     for i in range(l_v):
+        #         for ii, j in enumerate(d[v]):
+        #             # print(j)
+        #             x[i * l_v + ii] += j
 
+        # for bb in product(x):
+        #     print(bb)
+        # return x
+
+
+S = Solution()
+print(S.letterCombinations("23"))
