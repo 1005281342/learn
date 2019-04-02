@@ -21,5 +21,5 @@ def bin_search(data_list, val):
     return -1   # val不存在, 返回 -1
 
 
-ret = bin_search(list(range(1, 10)), 3)
+ret = bin_search(list(range(1, 10)), 0)
 print(ret)
