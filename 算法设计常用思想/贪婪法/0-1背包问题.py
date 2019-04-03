@@ -30,3 +30,7 @@ while max(density) >= 0:
         density[index] = -2
 
 print(index_list)
+c = 0
+for x in index_list:
+    c += Pi[x-1]
+print(c)
