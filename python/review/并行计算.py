@@ -37,5 +37,5 @@ with concurrent.futures.ProcessPoolExecutor() as ex:
 
     # 但是在 python3中，返回是一个迭代器，所以它其实是不可调用的 <class 'generator'>
     print(type(res))
-    res.__next__()  # sleep 10*16/os.cpu_count()
+    next(res)  # sleep 10*16/os.cpu_count()
     # next()
