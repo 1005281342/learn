@@ -15,8 +15,8 @@ def ni_hao(m):
     sleep(1+random.randint(1, 10))
     print(m)
 
-    a = ['Python', 'Python实习', '上海Python', '上海Python实习', '深圳Python', '深圳Python实习',
-         '杭州Python', '杭州Python实习']
+    a = ['Python', '深圳Python',
+         '杭州Python']
     neiRong = liuLanQi.find_element_by_xpath('//*[@id="filter-box"]/div/div[1]/div/form/div[1]/p/input')
     # //*[@id="keyword"]
     neiRong.clear()
@@ -53,7 +53,7 @@ if __name__ == '__main__':
         for url_item in range(10):
             sleep(1)
 
-        a = ['Python', 'Python实习', 'python应届生']
+        a = ['Python', 'python应届生']
         neiRong = liuLanQi.find_element_by_xpath('//*[@id="filter-box"]/div/div[1]/div/form/div[1]/p/input')
 
         neiRong.send_keys(a[random.randint(0, 2)])
