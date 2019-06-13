@@ -1,6 +1,6 @@
 # 连接
-from kafka import KafkaConsumer
-from kafka import KafkaProducer
+from kafka_learn import KafkaConsumer
+from kafka_learn import KafkaProducer
 
 server_list = ["192.168.0.1:xxxx", "192.168.0.2:xxxx"]
 # 生产者
